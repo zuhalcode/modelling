@@ -41,7 +41,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     result.push({ name: `${name} ${index}` });
   }
 
-  writeJSON(result);
+  // writeJSON(result);
 
   res.status(200).json({ id, result });
 }
