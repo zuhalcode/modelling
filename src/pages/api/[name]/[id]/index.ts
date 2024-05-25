@@ -4,7 +4,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import * as fs from "fs";
 import * as path from "path";
 
-const writeJSON = (result, filename = "testing-result.json") => {
+const writeJSON = (result: any, filename = "testing-result.json") => {
   const __dirname = path.join(process.cwd(), "src", "data");
   const filePath = path.join(__dirname, filename);
 
